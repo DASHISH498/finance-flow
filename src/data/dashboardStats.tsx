@@ -1,37 +1,32 @@
-import {
-  Wallet,
-  ArrowDownCircle,
-  ArrowUpCircle,
-  PiggyBank,
-} from "lucide-react";
+import type { DashboardStat } from "../types/dashboard";
 
-export const dashboardStats = [
+export const dashboardStats: DashboardStat[] = [
   {
     id: 1,
     title: "Total Balance",
-    amount: "₹1,25,000",
-    icon: <Wallet size={24} className="text-indigo-600" />,
+    amount: "₹2,45,000",
+    icon: "wallet",
     bgColor: "bg-indigo-100",
   },
   {
     id: 2,
     title: "Income",
-    amount: "₹55,000",
-    icon: <ArrowDownCircle size={24} className="text-green-600" />,
+    amount: "₹75,000",
+    icon: "income",
     bgColor: "bg-green-100",
   },
   {
     id: 3,
     title: "Expense",
-    amount: "₹27,000",
-    icon: <ArrowUpCircle size={24} className="text-red-600" />,
+    amount: "₹32,000",
+    icon: "expense",
     bgColor: "bg-red-100",
   },
   {
     id: 4,
     title: "Savings",
-    amount: "₹28,000",
-    icon: <PiggyBank size={24} className="text-amber-600" />,
-    bgColor: "bg-amber-100",
+    amount: "₹43,000",
+    icon: "savings",
+    bgColor: "bg-yellow-100",
   },
 ];

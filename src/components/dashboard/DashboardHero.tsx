@@ -4,7 +4,7 @@ const DashboardHero = () => {
   return (
     <section className="flex items-center justify-between mb-8">
       <div>
-        <h1 className="text-4xl font-bold text-slate-900">
+        <h1 className="text-4xl font-bold text-slate-200">
           Good Morning, Ashish 👋
         </h1>
 
@@ -13,7 +13,7 @@ const DashboardHero = () => {
         </p>
       </div>
 
-      <button className="flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-white transition hover:bg-slate-800">
+      <button className="flex items-center gap-2 border border-slate-700 rounded-xl bg-[#111827] px-5 py-3 text-white transition hover:bg-slate-800">
         <Plus size={18} />
         Add Transaction
       </button>

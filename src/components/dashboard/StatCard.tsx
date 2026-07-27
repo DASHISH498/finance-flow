@@ -14,14 +14,14 @@ const StatCard = ({
   bgColor,
 }: StatCardProps) => {
   return (
-    <div className="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
+    <div className="rounded-3xl bg-[#111827] p-6 shadow-sm border border-slate-700">
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-slate-400">
             {title}
           </p>
 
-          <h2 className="mt-3 text-3xl font-bold text-slate-900">
+          <h2 className="mt-3 text-3xl font-bold text-slate-300">
             {amount}
           </h2>
         </div>
