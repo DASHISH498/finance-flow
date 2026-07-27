@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/finance-flow/",
+  base: process.env.NODE_ENV === "production" ? "/finance-flow/" : "/",
   plugins: [react(), tailwindcss()],
 })
