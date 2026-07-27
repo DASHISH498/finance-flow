@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import Dashboard from "../pages/Dashboard";
 import Transactions from "../pages/Transactions";
@@ -8,7 +8,7 @@ import Settings from "../pages/Settings";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -40,7 +40,7 @@ const AppRouter = () => {
           element={<Settings />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
